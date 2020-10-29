@@ -11,10 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f4afb0c-c3ee-4167-b62c-e9a9305fd74b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Spinner/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Spinner/spinner.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Layout/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/college.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/college.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/student.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/student.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +40,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Glabbr/infniti-ui" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\ASUS\AppData\Roaming\npm\node_modules\prettier" />
     <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\Full stack\College-Student-Lookup\client\src\Components\Loading" />
+      <recent name="E:\Projects\Full stack\College-Student-Lookup\client\src\Layout" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -50,7 +65,7 @@
       <workItem from="1603875207446" duration="82000" />
       <workItem from="1603875310090" duration="277000" />
       <workItem from="1603875659800" duration="2528000" />
-      <workItem from="1603947731039" duration="9109000" />
+      <workItem from="1603947731039" duration="15508000" />
     </task>
     <task id="LOCAL-00001" summary="starting">
       <created>1603875793444</created>
@@ -80,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603956957237</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="done student api">
+      <created>1603957740255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603957740255</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,12 +125,37 @@
     <MESSAGE value="defined schema" />
     <MESSAGE value="add router" />
     <MESSAGE value="done college api" />
-    <option name="LAST_COMMIT_MESSAGE" value="done college api" />
+    <MESSAGE value="done student api" />
+    <option name="LAST_COMMIT_MESSAGE" value="done student api" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1603963282551">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1603963282551" />
+    <state width="1259" height="161" key="GridCell.Tab.0.bottom" timestamp="1603961279136">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="161" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1603961279136" />
+    <state width="1259" height="161" key="GridCell.Tab.0.center" timestamp="1603961279135">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="161" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1603961279135" />
+    <state width="1259" height="161" key="GridCell.Tab.0.left" timestamp="1603961279135">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="161" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1603961279135" />
+    <state width="1259" height="161" key="GridCell.Tab.0.right" timestamp="1603961279135">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="161" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1603961279135" />
     <state x="142" y="6" key="SettingsEditor" timestamp="1603953298805">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="142" y="6" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1603953298805" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1603964084122">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1603964084122" />
   </component>
 </project>
