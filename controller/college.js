@@ -3,7 +3,7 @@ const { resourceError, serverError } = require("../helper/errorHandler");
 const { success } = require("../helper/successHandler");
 const { NO_RESOURCE } = require("../consts");
 
-exports.getColleges = async (req, res, next) => {
+exports.getColleges = async (req, res) => {
   try {
     const colleges = await College.find();
     success(res, colleges);
@@ -12,7 +12,7 @@ exports.getColleges = async (req, res, next) => {
   }
 };
 
-exports.getCollegeById = async (req, res, next) => {
+exports.getCollegeById = async (req, res) => {
   const { collegeId } = req.params;
   console.log(collegeId);
   if (!collegeId) resourceError(res, "Please enter college");
@@ -25,7 +25,7 @@ exports.getCollegeById = async (req, res, next) => {
   }
 };
 
-exports.getCollegesByState = async (req, res, next) => {
+exports.getCollegesByState = async (req, res) => {
   const { stateId } = req.params;
   if (!stateId) resourceError(res, "Please enter state");
   try {
@@ -38,7 +38,7 @@ exports.getCollegesByState = async (req, res, next) => {
   }
 };
 
-exports.getCollegesByLocation = async (req, res, next) => {
+exports.getCollegesByLocation = async (req, res) => {
   const { locationId } = req.params;
   if (!locationId) resourceError(res, "Please enter city or location");
   try {
