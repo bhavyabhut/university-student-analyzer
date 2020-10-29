@@ -5,13 +5,23 @@ require('dotenv').config()
 const morgan = require("morgan");
 const cors = require("cors");
 
+const college = require('./router/college')
+const student = require('./router/student')
+
 const app = express()
 app.use(express.json());
 app.use(cors());
-
 if (process.env.NODE_ENV === "development") {
     app.use(morgan('tiny'));
 }
+const apiVersion = process.env.API_VERSION || "/v1";
+const port = process.env.PORT || 5000;
+
+// router
+app.use(`${apiVersion}/college`, college);
+app.use(`${apiVersion}/student`, student);
+
+
 
 // static;
 if (process.env.NODE_ENV === "production") {
@@ -37,7 +47,6 @@ db.once("open", () => {
     console.log("database connect....");
 });
 
-const port = process.env.PORT || 5000;
 app.listen(port,()=>{
     console.log(`Server is running in port ${port}`);
 })
