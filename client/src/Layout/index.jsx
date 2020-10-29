@@ -35,15 +35,15 @@ class Index extends Component {
           <Menu theme="dark" defaultSelectedKeys={["charts"]} mode="inline">
             <SubMenu key="13" icon={<PieChartOutlined />} title="Charts">
               <Menu.Item key="1" icon={<RadarChartOutlined />}>
-                State charts
+                <Link to="/charts/state">State charts</Link>
               </Menu.Item>
               <Menu.Item key="10" icon={<DotChartOutlined />}>
-                course charts
+                <Link to="/charts/course">course charts</Link>
               </Menu.Item>
             </SubMenu>
             <SubMenu key="colleges" icon={<UserOutlined />} title="Colleges">
               <Menu.Item key="3">
-                <Link to="allColleges">All colleges</Link>
+                <Link to="/allColleges">All colleges</Link>
               </Menu.Item>
               <Menu.Item key="4">
                 <Link to="/addCollege">Add college</Link>
