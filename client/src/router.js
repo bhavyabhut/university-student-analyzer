@@ -34,6 +34,16 @@ const routes = [
     exact: true,
     Component: lazy(() => import("./Components/Charts/Course")),
   },
+  {
+    path: "/student/:studentId",
+    exact: true,
+    Component: lazy(() => import("./Components/Student/Profile")),
+  },
+  {
+    path: "/college/:collegeId",
+    exact: true,
+    Component: lazy(() => import("./Components/College/Profile")),
+  },
 ];
 
 class Routers extends React.Component {

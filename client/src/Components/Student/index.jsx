@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Table } from "antd";
+import { PageHeader, Table } from "antd";
 import columns from "./columns";
 const Student = () => {
   const [data, setData] = useState([]);
@@ -13,17 +13,19 @@ const Student = () => {
       });
     });
   }, []);
-  console.log(data);
   return (
-    <Table
-      loading={loading}
-      columns={columns}
-      bordered
-      rowKey={(render) => render._id}
-      dataSource={data}
-      pagination
-      scroll={{ x: 1300 }}
-    />
+    <>
+      <PageHeader title="Students" />
+      <Table
+        loading={loading}
+        columns={columns}
+        bordered
+        rowKey={(render) => render._id}
+        dataSource={data}
+        pagination
+        scroll={{ x: 1300 }}
+      />
+    </>
   );
 };
 

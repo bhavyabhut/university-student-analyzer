@@ -5,19 +5,22 @@ import { Link } from "react-router-dom";
 const columns = [
   {
     title: "Name",
-    dataIndex: "first_name",
+    dataIndex: "name",
     render: (text, row) => (
-      <Link to={`student/${row._id}`}>{`${text} ${row.last_name}`}</Link>
+      <Link to={`college/${row._id}`}>{text.slice(0, text.length - 13)}</Link>
     ),
   },
   {
-    title: "Email",
-    dataIndex: "email",
-    render: (text, row) => <Link to={`student/${row._id}`}>{text}</Link>,
+    title: "State",
+    dataIndex: "state",
   },
   {
-    title: "Skills",
-    dataIndex: "skills",
+    title: "Foundation year",
+    dataIndex: "year_founded",
+  },
+  {
+    title: "Courses",
+    dataIndex: "courses",
     render: (text) =>
       text.split(",").map((prop) => {
         const num = prop.charCodeAt(0) + prop.charCodeAt(prop.length - 1);
@@ -29,16 +32,16 @@ const columns = [
       }),
   },
   {
-    title: "Year of batch",
-    dataIndex: "year_of_batch",
+    title: "City",
+    dataIndex: "city",
   },
   {
-    title: "Web",
-    dataIndex: "web",
+    title: "country",
+    dataIndex: "country",
   },
   {
-    title: "Phone",
-    dataIndex: "phone1",
+    title: "No of students",
+    dataIndex: "no_of_student",
   },
 ];
 

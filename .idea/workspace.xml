@@ -11,14 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f4afb0c-c3ee-4167-b62c-e9a9305fd74b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/Components/Student/columns.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/config/consts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/College/Profile/Address.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/College/Profile/CollegeStudent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/College/Profile/MainDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/College/Profile/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/College/columns.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Student/Profile/Address.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Student/Profile/MainDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Components/Student/Profile/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/College/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/College/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/ComingSoon/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/ComingSoon/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Student/columns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Student/columns.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Components/Student/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Student/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/Test.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/student.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/student.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +68,7 @@
       <workItem from="1603875207446" duration="82000" />
       <workItem from="1603875310090" duration="277000" />
       <workItem from="1603875659800" duration="2528000" />
-      <workItem from="1603947731039" duration="19385000" />
+      <workItem from="1603947731039" duration="29067000" />
     </task>
     <task id="LOCAL-00001" summary="starting">
       <created>1603875793444</created>
@@ -112,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603967719541</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="get all students in table">
+      <created>1603970508996</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603970508996</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +152,8 @@
     <MESSAGE value="done student api" />
     <MESSAGE value="react dashboard initialize" />
     <MESSAGE value="add all router" />
-    <option name="LAST_COMMIT_MESSAGE" value="add all router" />
+    <MESSAGE value="get all students in table" />
+    <option name="LAST_COMMIT_MESSAGE" value="get all students in table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603967345024">
