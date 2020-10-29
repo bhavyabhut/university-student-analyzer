@@ -3,6 +3,15 @@ const { serverError, resourceError } = require("../helper/errorHandler");
 const { success } = require("../helper/successHandler");
 const { NO_RESOURCE } = require("../consts");
 
+exports.getAllStudents = async (req, res) => {
+  try {
+    const students = await Student.find().limit(1000);
+    success(res, students);
+  } catch (error) {
+    serverError(res, error);
+  }
+};
+
 exports.getStudentById = async (req, res) => {
   const { studentId } = req.params;
   console.log(studentId);
@@ -18,7 +27,6 @@ exports.getStudentById = async (req, res) => {
 
 exports.getStudentsByCollegeId = async (req, res) => {
   const { collegeId } = req.params;
-  console.log("hu college id che", collegeId, res.params);
   if (!collegeId) resourceError(res, "Please enter college");
   try {
     const students = await Student.find({ collegeId });
