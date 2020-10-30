@@ -1,7 +1,10 @@
 const College = require("../schemas/College");
 const { resourceError, serverError } = require("../helper/errorHandler");
 const { success } = require("../helper/successHandler");
-const { NO_RESOURCE } = require("../consts");
+const {
+  errorMessage: { NO_RESOURCE },
+  course,
+} = require("../consts");
 
 exports.getColleges = async (req, res) => {
   try {
@@ -61,6 +64,26 @@ exports.getCollegesChart = async (req, res) => {
     const keys = Object.keys(counts);
     const values = Object.values(counts);
     data = keys.map((k, i) => ({ name: k, value: values[i] }));
+    success(res, data);
+  } catch (error) {
+    serverError(res, error);
+  }
+};
+
+exports.getCollegesCourseChart = async (req, res) => {
+  try {
+    let data = [];
+    let counts = {};
+    const colleges = await College.find();
+    Object.keys(course).forEach((key) =>
+      colleges.forEach((college) => {
+        if (college.courses.includes(course[key]))
+          counts[course[key]] = 1 + (counts[course[key]] || 0);
+      })
+    );
+    const dataKey = Object.keys(counts);
+    const dataValue = Object.values(counts);
+    data = dataKey.map((k, i) => ({ name: k, value: dataValue[i] }));
     success(res, data);
   } catch (error) {
     serverError(res, error);
