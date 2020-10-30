@@ -10,11 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4afb0c-c3ee-4167-b62c-e9a9305fd74b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="1f4afb0c-c3ee-4167-b62c-e9a9305fd74b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +52,7 @@
       <workItem from="1603875207446" duration="82000" />
       <workItem from="1603875310090" duration="277000" />
       <workItem from="1603875659800" duration="2528000" />
-      <workItem from="1603947731039" duration="41532000" />
+      <workItem from="1603947731039" duration="41857000" />
     </task>
     <task id="LOCAL-00001" summary="starting">
       <created>1603875793444</created>
@@ -142,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604037284602</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add heroku script">
+      <created>1604038475329</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604038475329</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +176,8 @@
     <MESSAGE value="add state  college chart" />
     <MESSAGE value="app api enum" />
     <MESSAGE value="add similar colleges" />
-    <option name="LAST_COMMIT_MESSAGE" value="add similar colleges" />
+    <MESSAGE value="add heroku script" />
+    <option name="LAST_COMMIT_MESSAGE" value="add heroku script" />
   </component>
   <component name="WindowStateProjectService">
     <state x="351" y="151" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604033914943">
