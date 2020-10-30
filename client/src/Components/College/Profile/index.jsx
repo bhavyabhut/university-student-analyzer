@@ -7,6 +7,7 @@ import CollegeStudent from "./CollegeStudent";
 import Address from "./Address";
 import Spinner from "../../Spinner";
 import API from "../../../api";
+import SimilarCollege from "./SimilarColleges";
 
 const { TabPane } = Tabs;
 
@@ -73,6 +74,20 @@ const CollegeProfile = () => {
               key="3"
             >
               <Address data={collegeData} />
+            </TabPane>
+            <TabPane
+              tab={
+                <span>
+                  <AndroidOutlined />
+                  Similar colleges
+                </span>
+              }
+              key="5"
+            >
+              <SimilarCollege
+                id={collegeData?._id}
+                location={collegeData?.city}
+              />
             </TabPane>
           </Tabs>
         </>
