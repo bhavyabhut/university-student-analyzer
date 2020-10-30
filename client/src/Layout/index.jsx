@@ -20,7 +20,6 @@ class Index extends Component {
   };
 
   onCollapse = (collapsed) => {
-    console.log(collapsed);
     this.setState({ collapsed });
   };
 
@@ -32,7 +31,12 @@ class Index extends Component {
           <div className="logo" style={{ overflow: "hidden" }}>
             <Logo />
           </div>
-          <Menu theme="dark" defaultSelectedKeys={["charts"]} mode="inline">
+          <Menu
+            theme="dark"
+            defaultOpenKeys={["13", "colleges"]}
+            defaultSelectedKeys={["13"]}
+            mode="inline"
+          >
             <SubMenu key="13" icon={<PieChartOutlined />} title="Charts">
               <Menu.Item key="1" icon={<RadarChartOutlined />}>
                 <Link to="/charts/state">State charts</Link>

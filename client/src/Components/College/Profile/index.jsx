@@ -17,7 +17,6 @@ const CollegeProfile = () => {
 
   const { collegeId } = useParams();
   useEffect(() => {
-    console.log(collegeId);
     setCollegeLoading(true);
     setStudentLoading(true);
     fetch(`http://localhost:5000/v1/college/${collegeId}`).then((data) =>
@@ -34,7 +33,6 @@ const CollegeProfile = () => {
         })
     );
   }, [collegeId]);
-  console.log(collegeData, studentData);
   return (
     <>
       {collegeLoading ? (

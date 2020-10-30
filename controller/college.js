@@ -50,3 +50,19 @@ exports.getCollegesByLocation = async (req, res) => {
     serverError(res, error);
   }
 };
+
+exports.getCollegesChart = async (req, res) => {
+  try {
+    const colleges = await College.find();
+    let counts = {};
+    let data = [];
+    const state = colleges.map((dat) => dat.state);
+    state.forEach((el) => (counts[el] = 1 + (counts[el] || 0)));
+    const keys = Object.keys(counts);
+    const values = Object.values(counts);
+    data = keys.map((k, i) => ({ name: k, value: values[i] }));
+    success(res, data);
+  } catch (error) {
+    serverError(res, error);
+  }
+};

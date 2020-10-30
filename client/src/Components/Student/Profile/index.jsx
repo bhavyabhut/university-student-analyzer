@@ -14,7 +14,6 @@ const StudentProfile = () => {
 
   const { studentId } = useParams();
   useEffect(() => {
-    console.log(studentId);
     setStudentLoading(true);
     fetch(`http://localhost:5000/v1/student/${studentId}`).then((data) =>
       data.json().then((data) => {

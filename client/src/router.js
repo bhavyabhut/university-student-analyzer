@@ -1,5 +1,10 @@
 import React, { lazy, Suspense } from "react";
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import {
+  Route,
+  Switch,
+  BrowserRouter as Router,
+  Redirect,
+} from "react-router-dom";
 import Layout from "./Layout";
 import Spinner from "./Components/Spinner";
 
@@ -30,6 +35,13 @@ const routes = [
     Component: lazy(() => import("./Components/Charts/State")),
   },
   {
+    path: "/charts/state/:stateId",
+    exact: true,
+    Component: lazy(() =>
+      import("./Components/Charts/State/CollegeChartTable")
+    ),
+  },
+  {
     path: "/charts/course",
     exact: true,
     Component: lazy(() => import("./Components/Charts/Course")),
@@ -53,6 +65,11 @@ class Routers extends React.Component {
         <Layout>
           <Suspense fallback={<Spinner />}>
             <Switch render={({ children }) => ({ children })}>
+              <Route
+                exact
+                path="/"
+                render={() => <Redirect to="/allColleges" />}
+              />
               {routes.map(({ path, Component, exact }) => (
                 <Route path={path} key={path} exact={exact}>
                   <Component />
