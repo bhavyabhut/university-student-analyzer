@@ -6,6 +6,7 @@ import MainDetails from "./MainDetails";
 import CollegeStudent from "./CollegeStudent";
 import Address from "./Address";
 import Spinner from "../../Spinner";
+import API from "../../../api";
 
 const { TabPane } = Tabs;
 
@@ -19,18 +20,17 @@ const CollegeProfile = () => {
   useEffect(() => {
     setCollegeLoading(true);
     setStudentLoading(true);
-    fetch(`http://localhost:5000/v1/college/${collegeId}`).then((data) =>
+    fetch(API.college.replace(":collegeId", collegeId)).then((data) =>
       data.json().then((data) => {
         setCollegeData(data.data);
         setCollegeLoading(false);
       })
     );
-    fetch(`http://localhost:5000/v1/student/college/${collegeId}`).then(
-      (data) =>
-        data.json().then((data) => {
-          setStudentData(data.data);
-          setStudentLoading(false);
-        })
+    fetch(API.collegeStudent.replace(":collegeId", collegeId)).then((data) =>
+      data.json().then((data) => {
+        setStudentData(data.data);
+        setStudentLoading(false);
+      })
     );
   }, [collegeId]);
   return (

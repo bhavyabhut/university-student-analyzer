@@ -6,7 +6,7 @@ const MainDetails = ({ data }) => {
   return (
     <>
       <Row gutter={24}>
-        <Col span={{ xs: 24, lg: 12 }}>
+        <Col xs={{ span: 24 }} lg={{ span: 12 }}>
           <Card>
             <Row className="customRow">
               <span className="text-dark">First name:</span>
@@ -40,7 +40,7 @@ const MainDetails = ({ data }) => {
             </Row>
           </Card>
         </Col>
-        <Col span={{ xs: 24, lg: 12 }}>
+        <Col xs={{ span: 24 }} lg={{ span: 12 }}>
           <Card>
             <Row className="customRow">
               <span className="text-dark">Batch year:</span>

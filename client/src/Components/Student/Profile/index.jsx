@@ -5,6 +5,7 @@ import { AppleOutlined, AndroidOutlined } from "@ant-design/icons";
 import MainDetails from "./MainDetails";
 import Address from "./Address";
 import Spinner from "../../Spinner";
+import API from "../../../api";
 
 const { TabPane } = Tabs;
 
@@ -15,7 +16,7 @@ const StudentProfile = () => {
   const { studentId } = useParams();
   useEffect(() => {
     setStudentLoading(true);
-    fetch(`http://localhost:5000/v1/student/${studentId}`).then((data) =>
+    fetch(API.student.replace(":studentId", studentId)).then((data) =>
       data.json().then((data) => {
         setStudentData(data.data);
         setStudentLoading(false);

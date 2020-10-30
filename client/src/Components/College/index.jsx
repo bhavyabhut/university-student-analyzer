@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { PageHeader, Table } from "antd";
 import columns from "./columns";
+import API from "../../api";
 
 const College = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5000/v1/college/").then((data) => {
+    fetch(API.colleges).then((data) => {
       data.json().then((data) => {
         setData(data.data);
         setLoading(false);

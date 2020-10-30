@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { PageHeader, Table } from "antd";
 import columns from "../../College/columns";
 import { useParams } from "react-router-dom";
+import API from "../../../api";
+
 const nestedColumns = [
   {
     title: "Name",
@@ -15,7 +17,7 @@ const CollegeChartTable = () => {
   const { stateId } = useParams();
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:5000/v1/college/state/${stateId}`).then((data) => {
+    fetch(API.collegeByState.replace(":stateId", stateId)).then((data) => {
       data.json().then((data) => {
         setData(data.data);
         setLoading(false);
