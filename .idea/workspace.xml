@@ -11,8 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f4afb0c-c3ee-4167-b62c-e9a9305fd74b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,8 @@
       <workItem from="1603875659800" duration="2528000" />
       <workItem from="1603947731039" duration="42834000" />
       <workItem from="1604058738201" duration="3125000" />
-      <workItem from="1604153078271" duration="97000" />
+      <workItem from="1604153078271" duration="1049000" />
+      <workItem from="1604157279862" duration="113000" />
     </task>
     <task id="LOCAL-00001" summary="starting">
       <created>1603875793444</created>
@@ -171,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604061361197</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add .env">
+      <created>1604153243232</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1604153243232</updated>
+    </task>
+    <task id="LOCAL-00018" summary="bug fix">
+      <created>1604153270461</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1604153270461</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +221,9 @@
     <MESSAGE value="change api" />
     <MESSAGE value="add course chart api" />
     <MESSAGE value="course chart client" />
-    <option name="LAST_COMMIT_MESSAGE" value="course chart client" />
+    <MESSAGE value="add .env" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="351" y="151" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604033914943">
