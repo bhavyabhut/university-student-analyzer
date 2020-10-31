@@ -1,6 +1,6 @@
 # university-student-analyzer
 
-## [Live](https://relation-find.herokuapp.com/) demo
+## [Live](https://univercity-student-analyzer.herokuapp.com/) demo
 
 #### Technology stack
 - Mongodb
