@@ -8,6 +8,7 @@
 - React
 - Nodejs
 
+
 #### Other library and modules
  ##### Frontend
 
@@ -24,6 +25,10 @@
 ![](https://img.shields.io/badge/Middleware-mongoose-pink)
 ![](https://img.shields.io/badge/Middleware-cors-pink)
 ![](https://img.shields.io/badge/server-nodemon-orange)
+
+<img src="https://github.com/bhavyabhut/university-student-analyzer/blob/master/screenshots/Screenshot%20(129).png" width="50%"/>
+<img src="https://github.com/bhavyabhut/university-student-analyzer/blob/master/screenshots/Screenshot%20(130).png" width="50%"/>
+<img src="https://github.com/bhavyabhut/university-student-analyzer/blob/master/screenshots/Screenshot%20(131).png" width="50%"/>
 
 ### Getting start
 - #### Installation
