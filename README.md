@@ -1,6 +1,5 @@
 # university-student-analyzer
 
-## [Live](https://univercity-student-analyzer.herokuapp.com/) demo
 
 ### A chart 📈 visualisation can be used to demonstrate the relationship between the university 🏫and its students 👨‍🎓, as well as the various types of courses offered by the university. 
 
